@@ -9,7 +9,7 @@ const ITFooter = (props: Props) => {
         <div className="text-primaryColor text-[30px] font-[600] text-center">
           Take the next step towards your career goals
         </div>
-        <div className="px-[80px]">
+        <div className="lg:px-[80px] px-[15px]">
           OZMA is one of the Leading Computer Training Institute in Warri
           Committed to Offering Top-Notch Training in Software, Hardware and
           Networking. We offer high-quality training opportunities to senior
@@ -20,7 +20,7 @@ const ITFooter = (props: Props) => {
         <div className="text-primaryColor text-[30px] font-[600] text-center">
           Learn The Skills You Need To Succed
         </div>
-        <div className="px-[80px]">
+        <div className="lg:px-[80px] px-[15px]">
           OZMA provides training and coaching services to individuals, staff,
           and management of government agencies, corporate bodies, private
           organizations, and undergraduate students. Our programs help identify

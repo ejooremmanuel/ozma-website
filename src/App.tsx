@@ -9,6 +9,7 @@ import Services from "./screens/Services";
 import HSE from "./screens/HSE";
 import Partners from "./screens/Partners";
 import Contact from "./screens/Contact";
+import IT from "./screens/IT";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/hse" element={<HSE />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/it" element={<IT />} />
         </Routes>
       </BrowserRouter>
       <Footer />
