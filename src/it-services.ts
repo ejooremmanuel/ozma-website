@@ -9,6 +9,12 @@ import webSolution from "./assets/it-web-solution.png";
 import designBranding from "./assets/it-design.png";
 import marketingLead from "./assets/it-marketing.png";
 import webMaintainance from "./assets/it-web-maintenance.png";
+import webMaintainenceBg from "./assets/webmaintenanceBG.png";
+import marketingBG from "./assets/marketingBG.png";
+import designBG from "./assets/DesignBg.png";
+import webSolutionBg from "./assets/webSolutionBg.png";
+import ecommerceBG from "./assets/ecommerceBg.png";
+import softwareBg from "./assets/softwareBg.png";
 
 export const itServices = [
   {
@@ -43,7 +49,7 @@ export const itServices = [
     description:
       "OZMA Software Development brings innovation within reach for students. Our tailored services cater to budding programmers and tech enthusiasts, providing mentorship, resources, and expertise to bring their ideas to life. From app development to web design, OZMA empowers students to turn their visions into reality. Join us in shaping the future of technology, one code at a time",
     heading: "Software Development",
-    bg: consulting,
+    bg: softwareBg,
     thumb: softwareDevelopment,
     thumbTitle: "Software Development",
   },
@@ -52,7 +58,7 @@ export const itServices = [
     description:
       "OZMA Ecommerce Solutions is your gateway to digital entrepreneurship as a student. Our specialized services cater to budding business owners, providing everything you need to launch and manage your online store. From customizable platforms to marketing strategies, OZMA empowers students to turn their passion into profit.",
     heading: "Ecommerce Solution",
-    bg: consulting,
+    bg: ecommerceBG,
     thumb: ecommerce,
     thumbTitle: "Ecommerce Solution",
   },
@@ -61,7 +67,7 @@ export const itServices = [
     description:
       "OZMA Web Solutions is your gateway to digital entrepreneurship as a student. Our specialized services cater to budding business owners, providing everything you need to launch and manage your online store. From customizable platforms to marketing strategies, OZMA empowers students to turn their passion into profit.",
     heading: "Web Solution",
-    bg: consulting,
+    bg: webSolutionBg,
     thumb: webSolution,
     thumbTitle: "Web Solution",
   },
@@ -70,7 +76,7 @@ export const itServices = [
     description:
       "At OZMA Design & Branding, we're passionate about empowering student designers to leave their mark on the world. Learn more about our team of creative experts, our commitment to student success, and our vision for a more visually captivating future.",
     heading: "Design and Branding",
-    bg: consulting,
+    bg: designBG,
     thumb: designBranding,
     thumbTitle: "Design and Branding",
   },
@@ -79,7 +85,7 @@ export const itServices = [
     description:
       "OZMA Marketing Lead Generation opens doors for student entrepreneurs to reach their target audience and expand their ventures. Our specialized services provide strategic marketing solutions tailored to the unique needs of students, helping them generate quality leads and drive business growth. From digital campaigns to social media strategies, OZMA equips students with the tools and expertise to succeed in today's competitive marketplace",
     heading: "Marketing Lead Generation",
-    bg: consulting,
+    bg: marketingBG,
     thumb: marketingLead,
     thumbTitle: "Marketing Lead Generation",
   },
@@ -88,7 +94,7 @@ export const itServices = [
     description:
       "OZMA Web Maintenance provides students with peace of mind by ensuring their online presence stays strong and secure. Our specialized services offer comprehensive support to keep websites running smoothly, allowing students to focus on their studies and passions without the worry of technical glitches. From regular updates to security checks, OZMA is your reliable partner in maintaining a professional and polished online presence.",
     heading: "Web Maintainace",
-    bg: consulting,
+    bg: webMaintainenceBg,
     thumb: webMaintainance,
     thumbTitle: "Web Maintainace",
   },
