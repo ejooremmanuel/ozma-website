@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.svg";
-import { Link, useLocation } from "react-router-dom";
+import { Link, matchPath, useLocation } from "react-router-dom";
 import { IoCloseSharp, IoMenuSharp } from "react-icons/io5";
 type Props = {};
 
@@ -63,7 +63,8 @@ const Navigation = (props: Props) => {
               <Link to={it.link} className={"font-[600] text-center"}>
                 {it?.title}
               </Link>
-              {path !== "/" && it.link.match(path) ? (
+
+              {path !== "/" && new RegExp(it.link, "ig").test(path) ? (
                 <div className="border-primaryColor border-b-[3px]"></div>
               ) : (
                 ""
@@ -82,33 +83,41 @@ const links = [
   {
     title: "Home",
     link: "/home",
+    match: "home",
   },
   {
     title: "About Us",
     link: "/about",
+    match: "about",
   },
   {
     title: "Our Service",
     link: "/services",
+    match: "services",
   },
   {
     title: "HSE",
     link: "/hse",
+    match: "hse",
   },
   {
     title: "IT",
-    link: "/it",
+    link: "/information-technology",
+    match: "information-technology",
   },
   {
     title: "Our Partners",
     link: "/partners",
+    match: "partners",
   },
   {
     title: "Project History",
     link: "/projects",
+    match: "projects",
   },
   {
     title: "Contact Us",
     link: "/contact",
+    match: "contact",
   },
 ];

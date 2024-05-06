@@ -229,8 +229,12 @@ const ITFooter = (props: Props) => {
           <div className="border border-l-[#5C5C5C] flex flex-col gap-6 p-4 border-r-0 border-t-0 border-b-0">
             <IoArrowUpSharp />
             <div className="flex flex-col gap-2">
-              {steps.map((it) => (
-                <div className="w-[20px] h-[20px] border border-[#5C5C5C] rounded-[100%]"></div>
+              {steps.map((it, i) => (
+                <div
+                  className={`w-[20px] h-[20px] border  rounded-[100%] ${
+                    i === 0 ? "border-white" : "border-[#5C5C5C]"
+                  }`}
+                ></div>
               ))}
             </div>
             <IoArrowDownSharp />

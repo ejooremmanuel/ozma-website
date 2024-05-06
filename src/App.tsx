@@ -27,7 +27,11 @@ function App() {
           <Route path="/partners" element={<Partners />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/it" element={<IT />} />
-          <Route path="/it/:slug" element={<ServiceDetail />} />
+          <Route path="/information-technology" element={<IT />} />
+          <Route
+            path="/information-technology/:slug"
+            element={<ServiceDetail />}
+          />
         </Routes>
       </BrowserRouter>
       <Footer />
