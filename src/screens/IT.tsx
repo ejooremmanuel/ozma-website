@@ -1,7 +1,8 @@
 import React from "react";
-import { IoArrowUpSharp } from "react-icons/io5";
+import { IoArrowForwardSharp, IoArrowUpSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
-
+import itImage2 from "../assets/it_image_2.png";
+import { itServices } from "../it-services";
 type Props = {};
 
 const IT = (props: Props) => {
@@ -27,7 +28,16 @@ const IT = (props: Props) => {
               Learn More
             </Link>
           </div>
-          <div></div>
+          <div
+            className="w-full"
+            style={{
+              background: `url('${itImage2}')`,
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              backgroundSize: "contain",
+              height: "100%",
+            }}
+          />
         </div>
         <div className="text-white bg-primaryColor rounded-[100px] p-3 w-1/6">
           <span>Browse Our Live Course</span>&nbsp;
@@ -38,6 +48,40 @@ const IT = (props: Props) => {
           NIGERIA. WE PROVIDE SOLUTIONS AND SERVICES ACROSS APPLICATION AND
           TECHNOLOGY MODERNIZATION, CLOUD ENABLEMENT, APPLICATION DEVELOPMENT,
           CYBER SECURITY, DATA MANAGEMENT, CONSULTING SERVICES AND SUPPORT.
+        </div>
+      </div>
+      <div className=" flex flex-col gap-3">
+        <div className="text-center text-primaryColor text-[30px] font-[600] lg:px-[80px] px-[15px]">
+          Products / Services
+        </div>
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 pb-6 w-full h-full bg-[#e6e6e6] lg:px-[80px] px-[15px] py-[40px]">
+          {itServices?.map((it) => (
+            <div className="p-3 flex flex-col gap-2 justify-center items-center bg-white rounded-md w-full">
+              <img src={it.thumb} alt="" className="w-full" />
+              <div className="py-2 font-[600]">{it.thumbTitle}</div>
+              <Link
+                className="p-2 bg-primaryColor text-white rounded-sm w-2/6 flex items-center"
+                to={`${it.slug}`}
+              >
+                <IoArrowForwardSharp className="inline text-white" />
+                &nbsp;
+                <span>Learn More...</span>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className=" flex flex-col gap-3">
+        <div className="text-center text-primaryColor text-[30px] font-[600] lg:px-[80px] px-[15px]">
+          Featured Services
+        </div>
+        <div className="pb-6 w-full h-full lg:px-[80px] px-[15px]">
+          We support business intelligence, architecture, enterprise quality,
+          content management, integration, enterprise application integration,
+          quality assurance services, and web applications. Our Experts
+          developers provide the best and complete solutions for websites that
+          represents your business in the global market with the user-friendly
+          interface, engaging, functional, interactive and creative designs.
         </div>
       </div>
     </div>

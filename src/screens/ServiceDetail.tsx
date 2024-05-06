@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { itServices } from "../it-services";
+import ITFooter from "../components/ITFooter";
 
 type Props = {};
 
@@ -37,6 +38,7 @@ const ServiceDetail = (props: Props) => {
           {service?.description}
         </div>
       </div>
+      <ITFooter />
     </div>
   );
 };

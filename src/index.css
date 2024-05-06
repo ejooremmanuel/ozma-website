@@ -75,3 +75,8 @@
 body {
   margin: 0;
 }
+
+select,
+input {
+  background: inherit;
+}
