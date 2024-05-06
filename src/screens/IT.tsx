@@ -15,7 +15,7 @@ const IT = (props: Props) => {
           height: "700px",
         }}
       >
-        <div className="grid grid-cols-2 justify-between w-full">
+        <div className="grid lg:grid-cols-2 justify-between w-full grid-cols-1 gap-3">
           <div className="bg-[#FA873E] p-3 rotate-[1.34deg] h-[260px] w-[400px]">
             <div className="rotate-[-1.34deg]">OZMA DIGITAL DRIVING GROWTH</div>
             <div className="py-2 font-[700] text-[30px] mb-3">
@@ -39,8 +39,9 @@ const IT = (props: Props) => {
             }}
           />
         </div>
-        <div className="text-white bg-primaryColor rounded-[100px] p-3 w-1/6">
-          <span>Browse Our Live Course</span>&nbsp;
+        <div className="text-white bg-primaryColor rounded-[100px] p-3 lg:w-1/6 w-5/6">
+          <span className="whitespace-nowrap">Browse Our Live Course</span>
+          &nbsp;
           <IoArrowUpSharp color="#fff" className="rotate-[37.13deg] inline" />
         </div>
         <div className=" lg:w-[60%] w-[90%] leading-8 font-[600] text-black">
@@ -60,7 +61,7 @@ const IT = (props: Props) => {
               <img src={it.thumb} alt="" className="w-full" />
               <div className="py-2 font-[600]">{it.thumbTitle}</div>
               <Link
-                className="p-2 bg-primaryColor text-white rounded-sm w-2/6 flex items-center"
+                className="p-2 bg-primaryColor text-white rounded-sm lg:w-2/6 w-5/6 lg:justify-start justify-center flex items-center"
                 to={`${it.slug}`}
               >
                 <IoArrowForwardSharp className="inline text-white" />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.svg";
-import { Link, matchPath, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { IoCloseSharp, IoMenuSharp } from "react-icons/io5";
 type Props = {};
 

@@ -130,7 +130,7 @@ const ITFooter = (props: Props) => {
           performance, productivity, and efficiency.
         </div>
       </div>
-      <div className="bg-[#e6e6e6] w-full grid grid-cols-2">
+      <div className="bg-[#e6e6e6] w-full grid lg:grid-cols-2 grid-cols-1">
         <img
           src={formImage}
           alt=""
@@ -146,8 +146,8 @@ const ITFooter = (props: Props) => {
             users. Our courses cater to a wide range of skill levels, ensuring
             that everyone can benefit from our training.
           </div>
-          <div className="flex flex-col gap-6 p-8">
-            <div className="border-[#7e7e7e] border bg-[#D9D9D9] w-3/6">
+          <div className="flex flex-col gap-6 lg:p-8 p-4 w-full">
+            <div className="border-[#7e7e7e] border bg-[#D9D9D9] lg:w-3/6 w-full">
               {items.map((it, index) => (
                 <div
                   className={`flex gap-2  p-3  w-full ${
@@ -184,12 +184,12 @@ const ITFooter = (props: Props) => {
           backgroundRepeat: "no-repeat",
           width: "100%",
           backgroundSize: "cover",
-          height: "800px",
+          // height: "800px",
         }}
-        className="flex flex-col relative pt-20 px-10 mt-20 gap-8"
+        className="flex flex-col relative pt-20 lg:px-10 px-5 mt-20 gap-8 lg:min-h-[250px]"
       >
         <div className="absolute bg-[#00154C] p-3 text-center flex items-center gap-3 justify-center rounded-[7px] top-[-30px] w-[70%] right-[15%] cursor-pointer">
-          <IoEye color="#fff" className="inline" />
+          <IoEye color="#fff" className="lg:inline hidden" />
           <div className="text-white">
             Click Here : To Download Our Admission Guidelines, Refund,
             Cancellation and Deferment Policy
